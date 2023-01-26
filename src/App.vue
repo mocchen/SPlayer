@@ -57,13 +57,6 @@ onMounted(() => {
   // 挂载主窗口至全局
   window.$mainContent = mainContent.value;
 
-  // 初始化
-  $notification["info"]({
-    content: "项目未完成",
-    meta: "最近更新：发现-排行榜页面完善",
-    duration: 8000,
-  });
-
   // 版权声明
   let logoText = "SPlayer";
   let copyrightNotice = `\n\n版本: ${packageJson.version}\n作者: ${packageJson.author}\n作者主页: ${packageJson.home}\nGitHub: ${packageJson.github}`;
